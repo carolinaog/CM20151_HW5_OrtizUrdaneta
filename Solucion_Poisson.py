@@ -280,14 +280,6 @@ Fuerza_gravitacional=sqrt(Fx**2+Fy**2+Fz**2)
 
 # In[15]:
 
-#Funcion que determina los planos del cubo, de acuerdo a un z fijado que entra por parámetro
-def FUERZA_G(z):
-    F_gravitacional=zeros((dim,dim))
-    for i in range(dim):
-        for j in range(dim):
-            F_gravitacional[i][j]=Fuerza_gravitacional[i][j][z]
-    return F_gravitacional
-
 
 # In[34]:
 
@@ -306,6 +298,7 @@ with file('Fuerza.txt', 'w') as outfile:
         outfile.write('# New slice\n')
         
 #fuente= http://stackoverflow.com/questions/3685265/how-to-write-a-multidimensional-array-to-a-text-file
+#fuente ifft= http://www.mi.infn.it/isapp04/Moore/notes2.pdf
 
 
 # In[ ]:
